@@ -22,3 +22,5 @@ jobs:
           git pull origin main
           git branch -f staging
           git push -f origin staging
+        env:
+            GH_PAT: ${{ secrets.GH_PAT }}
